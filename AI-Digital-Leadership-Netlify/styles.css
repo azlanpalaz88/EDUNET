@@ -375,6 +375,11 @@ svg {
 .bar-label em { flex: none; padding: 3px 5px; color: var(--blue-700); background: var(--blue-100); border-radius: 4px; font-size: 5.5px; font-style: normal; font-weight: 800; letter-spacing: .04em; }
 .track { height: 12px; background-color: #f1f5f7; background-image: linear-gradient(90deg, transparent 24.8%, #d9e2e9 25%, transparent 25.2%, transparent 49.8%, #d9e2e9 50%, transparent 50.2%, transparent 74.8%, #d9e2e9 75%, transparent 75.2%); border-radius: 3px; }
 .bar { width: var(--value); height: 100%; background: var(--blue-300); border-radius: 3px; }
+.bar-innovation { --value: 70.7%; }
+.bar-visionary { --value: 62%; }
+.bar-practice { --value: 52.7%; }
+.bar-systemic { --value: 36.7%; }
+.bar-governance { --value: 20%; }
 .bar-row:nth-of-type(3) .bar { background: #8eb9db; }
 .bar-row:nth-of-type(4) .bar { background: #7baacb; }
 .bar-row:nth-of-type(5) .bar { background: #a9c4d7; }
@@ -432,6 +437,8 @@ svg {
 .compare-col { width: 72px; text-align: center; }
 .vertical-track { height: 84px; display: flex; align-items: end; justify-content: center; border-bottom: 1px solid #bfcbd3; background-image: linear-gradient(#edf1f3 1px, transparent 1px); background-size: 100% 20%; }
 .vertical-bar { position: relative; width: 32px; height: var(--height); background: var(--blue-300); border-radius: 4px 4px 0 0; }
+.vertical-bar.trained { --height: 64.2%; }
+.vertical-bar.untrained { --height: 68.8%; }
 .vertical-bar.untrained { background: var(--red-300); }
 .vertical-bar b { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); color: var(--blue-900); font-size: 10px; }
 .vertical-bar.untrained b { color: var(--red-700); }
