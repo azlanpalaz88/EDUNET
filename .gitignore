@@ -1,0 +1,8 @@
+.DS_Store
+*.zip
+*.sav
+*.spv
+*.xlsx
+*.docx
+*.pdf
+~$*

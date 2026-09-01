@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f8fb">
+  <meta name="description" content="Academic research dashboard on AI-oriented digital leadership among primary school headteachers, based on the perspectives of ICT teachers in Penang.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI-Oriented Digital Leadership of School Headteachers">
+  <meta property="og:description" content="A quantitative survey from the perspective of primary school ICT teachers in Penang.">
+  <title>AI-Oriented Digital Leadership Research Dashboard</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true">
+    <symbol id="icon-school" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M8 11h.01M12 11h.01M16 11h.01"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="icon-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-brain" viewBox="0 0 24 24"><path d="M9.5 4.5A3.5 3.5 0 0 0 6 8v.2A3.5 3.5 0 0 0 4.5 15 3.5 3.5 0 0 0 8 18.5h1.5M14.5 4.5A3.5 3.5 0 0 1 18 8v.2a3.5 3.5 0 0 1 1.5 6.8 3.5 3.5 0 0 1-3.5 3.5h-1.5M9.5 4.5V20M14.5 4.5V20M9.5 9H7.8M14.5 9h1.7M9.5 15H8M14.5 15H16"/></symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 3-1.2 3.8L7 8l3.8 1.2L12 13l1.2-3.8L17 8l-3.8-1.2L12 3ZM5 14l-.8 2.2L2 17l2.2.8L5 20l.8-2.2L8 17l-2.2-.8L5 14ZM19 13l-.8 2.2-2.2.8 2.2.8L19 19l.8-2.2L22 16l-2.2-.8L19 13Z"/></symbol>
+    <symbol id="icon-growth" viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2M3 6l6-4 6 5 6-4"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></symbol>
+    <symbol id="icon-balance" viewBox="0 0 24 24"><path d="M12 3v18M5 6h14M5 6l-3 6h6L5 6ZM19 6l-3 6h6l-3-6ZM8 21h8"/></symbol>
+    <symbol id="icon-hand" viewBox="0 0 24 24"><path d="M8 12V6a2 2 0 0 1 4 0v5-7a2 2 0 0 1 4 0v7-5a2 2 0 0 1 4 0v8c0 4-3 7-7 7h-2c-2 0-3.2-.7-4.5-2L2 14.5a2.1 2.1 0 0 1 3-3L8 14"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></symbol>
+  </svg>
+
+  <main class="dashboard">
+    <header class="hero">
+      <div>
+        <div class="eyebrow">Research evidence dashboard</div>
+        <h1>AI-Oriented Digital Leadership of School Headteachers</h1>
+        <p>Perspectives of Primary School ICT Teachers in Penang</p>
+      </div>
+      <div class="study-label"><span></span>Quantitative Cross-Sectional Survey <b>|</b> N = 100</div>
+    </header>
+
+    <nav class="research-nav" aria-label="Dashboard sections">
+      <div class="nav-links">
+        <a href="#study-overview">Overview</a>
+        <a href="#descriptive-results">Descriptive</a>
+        <a href="#inferential-results">Inferential</a>
+        <a href="#key-finding">Significant Finding</a>
+        <a href="#practical-implications">Implications</a>
+      </div>
+      <div class="view-controls" aria-label="Finding emphasis">
+        <span>View</span>
+        <button type="button" data-view="all" class="active" aria-pressed="true">All evidence</button>
+        <button type="button" data-view="significant" aria-pressed="false">Focus p = .015</button>
+      </div>
+    </nav>
+
+    <div class="dashboard-grid">
+      <section id="study-overview" class="panel overview" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div><h2 id="overview-title">Study Overview</h2><p>Research design and sample characteristics</p></div>
+          <div class="software">Statistical analysis <b>IBM SPSS Statistics 27</b></div>
+        </div>
+        <div class="kpi-grid">
+          <article class="kpi">
+            <div class="icon-box"><svg><use href="#icon-school"/></svg></div>
+            <div><span>Population</span><strong>N = 140</strong><small>ICT Teachers · 140 National Primary Schools (SK)</small></div>
+          </article>
+          <article class="kpi">
+            <div class="icon-box"><svg><use href="#icon-users"/></svg></div>
+            <div><span>Sample</span><strong>n = 100</strong><small>Primary School ICT Teachers</small></div>
+          </article>
+          <article class="kpi">
+            <div class="icon-box"><svg><use href="#icon-list"/></svg></div>
+            <div><span>Instrument</span><strong>25 Items</strong><small>5 Domains · 5-Point Likert</small></div>
+          </article>
+          <article class="kpi reliability">
+            <div class="icon-box"><svg><use href="#icon-shield"/></svg></div>
+            <div><span>Reliability</span><strong>α = .897</strong><small>High internal consistency</small></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="training-profile" class="panel training" aria-labelledby="training-title">
+        <div class="section-heading compact">
+          <span class="section-number">02</span>
+          <div><h2 id="training-title">AI Training Profile</h2><p>Prior training experience</p></div>
+        </div>
+        <div class="donut-wrap">
+          <div class="donut" role="img" aria-label="60 percent with prior AI training and 40 percent without prior AI training">
+            <div><strong>100</strong><span>Respondents</span></div>
+          </div>
+          <div class="legend">
+            <div><i class="blue-dot"></i><span>With prior AI training</span><strong>60%</strong><small>n = 60</small></div>
+            <div><i class="red-dot"></i><span>Without prior AI training</span><strong>40%</strong><small>n = 40</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="descriptive-results" class="panel descriptive" aria-labelledby="descriptive-title">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div><h2 id="descriptive-title">AI-Oriented Digital Leadership</h2><p>Descriptive results · ranked by mean score</p></div>
+          <div class="overall-score"><span>Overall</span><strong>M = 3.73</strong><small>SD = .34</small></div>
+        </div>
+        <div class="bar-chart" role="img" aria-label="Horizontal bar chart ranking five AI-oriented digital leadership domains">
+          <div class="axis"><span>3.0</span><span>3.5</span><span>4.0</span><span>4.5</span></div>
+          <div class="bar-row highest">
+            <div class="bar-label"><span>Learning &amp; Innovation Culture</span><em>HIGHEST</em></div>
+            <div class="track"><div class="bar" style="--value:70.7%"></div></div>
+            <strong>4.06</strong><small>SD .42</small>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>AI-Oriented Visionary Leadership</span></div>
+            <div class="track"><div class="bar" style="--value:62%"></div></div>
+            <strong>3.93</strong><small>SD .42</small>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Excellence in Professional Practice</span></div>
+            <div class="track"><div class="bar" style="--value:52.7%"></div></div>
+            <strong>3.79</strong><small>SD .42</small>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Systemic Improvement</span></div>
+            <div class="track"><div class="bar" style="--value:36.7%"></div></div>
+            <strong>3.55</strong><small>SD .43</small>
+          </div>
+          <div class="bar-row governance">
+            <div class="bar-label"><span>Ethical &amp; Responsible AI Governance</span><em>KEY DEVELOPMENT AREA</em></div>
+            <div class="track"><div class="bar" style="--value:20%"></div></div>
+            <strong>3.30</strong><small>SD .47</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="domain-framework" class="panel domains" aria-labelledby="domains-title">
+        <div class="section-heading compact">
+          <span class="section-number">04</span>
+          <div><h2 id="domains-title">Five-Domain Conceptualisation</h2><p>Core dimensions of AI-oriented leadership</p></div>
+        </div>
+        <div class="domain-layout">
+          <div class="ai-core"><svg><use href="#icon-brain"/></svg><strong>AI</strong><span>Leadership</span></div>
+          <div class="domain-list">
+            <article><b>01</b><svg><use href="#icon-eye"/></svg><div><strong>AI-Oriented Visionary Leadership</strong><span>Strategic vision and direction for AI use</span></div></article>
+            <article><b>02</b><svg><use href="#icon-spark"/></svg><div><strong>Learning &amp; Innovation Culture</strong><span>Learning, experimentation, collaboration and innovation</span></div></article>
+            <article><b>03</b><svg><use href="#icon-users"/></svg><div><strong>Excellence in Professional Practice</strong><span>AI knowledge, professional learning and capacity development</span></div></article>
+            <article><b>04</b><svg><use href="#icon-growth"/></svg><div><strong>Systemic Improvement</strong><span>Data-informed decisions and continuous improvement</span></div></article>
+            <article class="ethical"><b>05</b><svg><use href="#icon-shield"/></svg><div><strong>Ethical &amp; Responsible AI Governance</strong><span>AI ethics, data privacy and security, bias and fairness, human oversight, and accountability</span></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="inferential-results" class="panel inference" aria-labelledby="inference-title">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <div><h2 id="inference-title">Do Perceptions Differ by Prior AI Training?</h2><p>Independent-samples t-test by training experience</p></div>
+          <div class="not-significant"><span>Overall result</span><strong>NOT SIGNIFICANT</strong><small>t(98) = -1.006 · p = .317</small></div>
+        </div>
+        <p class="test-statement">No statistically significant difference in overall AI-oriented digital leadership based on AI training experience.</p>
+        <div class="comparison-table" role="table" aria-label="Inferential statistics by leadership domain">
+          <div class="table-row table-head" role="row"><span>Domain</span><span>t statistic</span><span>p value</span><span>Result</span></div>
+          <div class="table-row" role="row"><strong>Visionary Leadership</strong><span>-0.789</span><span>.432</span><em>Not Significant</em></div>
+          <div class="table-row" role="row"><strong>Learning &amp; Innovation Culture</strong><span>1.224</span><span>.224</span><em>Not Significant</em></div>
+          <div class="table-row" role="row"><strong>Professional Practice</strong><span>-1.177</span><span>.242</span><em>Not Significant</em></div>
+          <div class="table-row" role="row"><strong>Systemic Improvement <small>Welch’s t</small></strong><span>-0.547</span><span>.586</span><em>Not Significant</em></div>
+          <div class="table-row significant" role="row"><strong>Ethical &amp; Responsible AI Governance</strong><span>-2.476</span><span>.015</span><em>Significant</em></div>
+        </div>
+      </section>
+
+      <section id="key-finding" class="panel key-finding" aria-labelledby="finding-title">
+        <div class="finding-head">
+          <div><span class="feature-label">06 · Key significant finding</span><h2 id="finding-title">Ethical &amp; Responsible<br>AI Governance</h2></div>
+          <div class="p-value"><span>p value</span><strong>.015</strong><small>Statistically Significant Difference</small></div>
+        </div>
+        <div class="finding-body">
+          <div class="two-bars" role="img" aria-label="With prior AI training mean 3.21, without prior AI training mean 3.44">
+            <div class="compare-col"><div class="vertical-track"><div class="vertical-bar trained" style="--height:64.2%"><b>3.21</b></div></div><strong>With training</strong><span>SD = .50</span></div>
+            <div class="compare-col"><div class="vertical-track"><div class="vertical-bar untrained" style="--height:68.8%"><b>3.44</b></div></div><strong>Without training</strong><span>SD = .40</span></div>
+          </div>
+          <div class="finding-stats">
+            <div><span>Test statistic</span><strong>t(98) = -2.476</strong></div>
+            <div><span>Mean difference</span><strong>-.233</strong></div>
+            <div><span>95% confidence interval</span><strong>[-.420, -.046]</strong></div>
+          </div>
+        </div>
+        <p class="interpretation"><b>Interpretation:</b> ICT teachers without prior AI training reported higher perceptions of headteachers’ Ethical &amp; Responsible AI Governance than those with prior AI training. <span>This association does not imply causality.</span></p>
+      </section>
+
+      <section id="research-insight" class="panel insight" aria-labelledby="insight-title">
+        <div class="section-heading compact">
+          <span class="section-number">07</span>
+          <div><h2 id="insight-title">Key Research Insight</h2></div>
+        </div>
+        <div class="continuum">
+          <div><span>Stronger</span><strong>Learning &amp; Innovation Culture</strong><b>M = 4.06</b></div>
+          <i>→</i>
+          <div class="continuum-overall"><span>Overall</span><strong>AI-Oriented Digital Leadership</strong><b>M = 3.73</b></div>
+          <i>→</i>
+          <div class="continuum-priority"><span>Priority for development</span><strong>Ethical &amp; Responsible AI Governance</strong><b>M = 3.30</b></div>
+        </div>
+        <p>Headteachers appear more established in enabling AI-related learning and innovation than in governing AI ethically and responsibly.</p>
+      </section>
+
+      <section id="practical-implications" class="panel implications" aria-labelledby="implications-title">
+        <div class="section-heading compact">
+          <span class="section-number">08</span>
+          <div><h2 id="implications-title">Priority Competencies for Leadership Development</h2></div>
+        </div>
+        <div class="competency-grid">
+          <article><svg><use href="#icon-brain"/></svg><span>AI Ethics</span></article>
+          <article><svg><use href="#icon-lock"/></svg><span>Data Privacy<br>&amp; Security</span></article>
+          <article><svg><use href="#icon-balance"/></svg><span>Bias &amp;<br>Fairness</span></article>
+          <article><svg><use href="#icon-hand"/></svg><span>Human<br>Oversight</span></article>
+          <article><svg><use href="#icon-check"/></svg><span>Accountability</span></article>
+        </div>
+        <p>Strengthen headteachers’ capacity to lead AI strategically, ethically, responsibly and accountably.</p>
+      </section>
+
+      <section id="study-significance" class="panel significance-callout" aria-labelledby="significance-title">
+        <div class="callout-mark">09</div>
+        <div><h2 id="significance-title">Study Significance</h2><p>This study provides empirical evidence to help schools and policymakers identify <b>Ethical &amp; Responsible AI Governance</b> as a priority area for strengthening headteachers’ digital leadership competencies, particularly through professional development focused on the ethical and responsible use of AI.</p></div>
+      </section>
+
+      <section id="final-takeaway" class="panel takeaway" aria-labelledby="takeaway-title">
+        <span>10 · Final takeaway</span>
+        <h2 id="takeaway-title">“Effective AI-oriented digital leadership is not only about encouraging AI adoption and innovation; it also requires the capacity to govern AI <b>ethically, responsibly, and accountably.</b>”</h2>
+      </section>
+    </div>
+
+    <footer>
+      <span><b>Research Context</b> National Primary Schools (SK), Penang, Malaysia</span>
+      <span><b>Respondents</b> ICT Teachers / Bestari Coordinators</span>
+      <span><b>Analysis</b> Descriptive Statistics &amp; Independent-Samples t-Test</span>
+      <span><b>Software</b> IBM SPSS Statistics 27</span>
+    </footer>
+  </main>
+  <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+  <div class="interaction-status" aria-live="polite"></div>
+</body>
+</html>
